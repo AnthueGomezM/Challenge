@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge AnthueG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="header__logo">
+                <img class="logo__cabeza" src="./imagenes/logo.svg" alt="icono de alura latam">
+            </div>
+        </div>       
+    </header>
+    <main class="presentacion">
+        <section class="entradas">
+            <textarea class="entradas__usuario" id="textoEntrada" name="texto" placeholder="ingresa el texto aquí"></textarea>
+            <p class="advertencia"><img src="./imagenes/!.svg" alt="alerta">Solo letras minusculas y sin acentos</p>
+            <div class="botones">
+                <button onclick="accionEncriptar(); ocultarElementos(); mostrarElementos();" class="botones__encrip">Encriptar</button>
+                <button onclick="accionDesencriptar();" class="botones__desencrip" id="reiniciar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="salidas" id="salidas">
+            <img class="imagen" src="https://www.crunchyroll.com/build/assets/img/search/empty-search.png" id="imagenAviso" alt="No se encuentra un mensaje">
+            <div id="avisos" class="avisos">
+                <textarea name="final" id="final" class="final"></textarea>
+                <textarea class="salidaEncrip" id="textoSalida" placeholder="Ningún mensaje fue encontrado"></textarea>
+                <p class="avisos__sugerencia" id="avisos__sugerencia">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button onclick="copiar()" id="botonCopiar" class="botonc">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Anthue Edonson Yael Gomez Morales</p>
+    </footer>
+</body>
+<script src="app.js" defer></script>
+</html>
